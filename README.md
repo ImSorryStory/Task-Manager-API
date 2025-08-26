@@ -281,8 +281,6 @@ pytest --cov=app --cov-report=term-missing
 - Удаление и 404
 - Валидация входных данных (422)
 
-Рекомендуется добавить нагрузочные/параллельные тесты под вашу среду (см. `httpx.AsyncClient`, `pytest-asyncio`).
-
 ---
 
 ## Наброски дорожной карты
@@ -309,6 +307,7 @@ pytest --cov=app --cov-report=term-missing
 Запускайте терминал PowerShell от имени администратора и активируйте окружение: `.venv\\Scripts\\Activate.ps1`.
 
 ---
+
 
 
 
