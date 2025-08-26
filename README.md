@@ -7,7 +7,7 @@
 [![Tests](https://img.shields.io/badge/tests-pytest%20%2B%20coverage-6C63FF.svg)](#)
 [![CI](https://img.shields.io/badge/GitHub_Actions-ready-2088FF.svg)](#)
 
-Профессионально оформленный сервис управления задачами на **FastAPI** с:
+Сервис управления задачами на **FastAPI** с:
 - CRUD API и UUID-идентификаторами
 - **Единым Enum статусов** и **правилами переходов** с кодом **409 Conflict**
 - **ETag/версирование** и заголовком **If-Match** с кодом **412 Precondition Failed**
@@ -309,4 +309,5 @@ pytest --cov=app --cov-report=term-missing
 Запускайте терминал PowerShell от имени администратора и активируйте окружение: `.venv\\Scripts\\Activate.ps1`.
 
 ---
+
 
