@@ -177,7 +177,7 @@ curl -X PATCH http://localhost:8000/tasks/<id> \
 
 **Удалить**
 ```bash
-curl -X DELETE http://localhost:8000/tasks/<id> -i
+curl -X DELETE http://localhost:8001/tasks/<id> -i
 ```
 
 ---
@@ -204,13 +204,13 @@ python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\
 pip install -r requirements.txt
 alembic upgrade head                                   # применить миграции
 uvicorn app.main:app --reload
-# Откройте http://127.0.0.1:8000/docs
+# Откройте http://127.0.0.1:8001/docs
 ```
 
 ### Вариант B — Docker Compose (Postgres)
 ```bash
 docker compose up --build
-# API: http://localhost:8000/docs
+# API: http://localhost:8001/docs
 ```
 В этом режиме приложение использует `DATABASE_URL=postgresql+psycopg://task:task@db:5432/taskdb`.
 
@@ -309,5 +309,6 @@ pytest --cov=app --cov-report=term-missing
 Запускайте терминал PowerShell от имени администратора и активируйте окружение: `.venv\\Scripts\\Activate.ps1`.
 
 ---
+
 
 
